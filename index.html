@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificación Neuroquirúrgica Hospital Juan A. Fernández</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            position: relative; /* Necesario para que la imagen de fondo se posicione bien */
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            position: relative; /* Asegura que el título esté por encima de la marca de agua */
+            z-index: 2;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between; /* Coloca los logos a los extremos */
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative; /* Asegura que los logos estén por encima de la marca de agua */
+            z-index: 2;
+        }
+        .logo-container {
+            max-width: 150px; /* Tamaño máximo de los logos */
+        }
+        .logo-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .image-watermark {
+            position: absolute;
+            top: 50%; /* Centra verticalmente */
+            left: 50%; /* Centra horizontalmente */
+            transform: translate(-50%, -50%); /* Ajusta la imagen para que quede justo en el centro */
+            max-width: 600px; /* Ajusta el tamaño de la marca de agua */
+            width: 80%; /* La imagen ocupará un 80% del ancho disponible */
+            opacity: 0.1; /* Opacidad baja para efecto de marca de agua */
+            z-index: 1; /* Coloca la imagen detrás del contenido */
+        }
+        .links-container {
+            text-align: center; /* Alinea los enlaces al centro */
+            position: relative;
+            z-index: 2; /* Asegura que los enlaces estén por encima de la marca de agua */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #3498db;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            display: inline-block; /* Asegura que el enlace pueda ser centrado */
+        }
+        a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Planificación Neuroquirúrgica Hospital Juan A. Fernández</h1>
+
+    <!-- Contenedor de los logos a los extremos -->
+    <div class="header">
+        <!-- Logo a la izquierda -->
+        <div class="logo-container">
+            <img src="logo_hospital.jpg" alt="Logo del Hospital">
+        </div>
+        <!-- Logo a la derecha -->
+        <div class="logo-container">
+            <img src="logo_neurocirugia.png" alt="Logo del Servicio de Neurocirugía">
+        </div>
+    </div>
+
+    <!-- Imagen como marca de agua -->
+    <img class="image-watermark" src="hjaf.png" alt="Hospital Juan A. Fernández">
+
+    <!-- Enlaces centrados -->
+    <div class="links-container">
+        <ul>
+            <li><a href="caso_6/index.html">Caso 6 (Probable meningioma esfenoidal derecho)</a></li>
+            <li><a href="caso_5/index.html">Caso 5 (Tumor frontal)</a></li>
+        </ul>
+    </div>
+</body>
+</html>
